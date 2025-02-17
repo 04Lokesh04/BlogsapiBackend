@@ -18,7 +18,11 @@ const userSchemaRules={
         type:String,
         required:true,
         default:"User"
-    }
+    },
+    isVerified:{
+        type:Boolean,
+        default:false,
+    },
 }
 
 const userSchema=new mongoose.Schema(userSchemaRules)
